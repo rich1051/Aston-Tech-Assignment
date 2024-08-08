@@ -6,15 +6,19 @@ body {
 
 .header {
   display: flex;
+/* align-items: Used for main axis (horizontal line) */
   align-items: center;
   background-color: #52657a;
   padding: 10px 20px;
+/* justify-content: Used for cross axis (vertical line) */
   justify-content: center;
+/* (early artifact) position: relative element positioned according to normal flow, then offset relative to itself based on left-right-top-bottom position. */
   position: relative;
   height: 100px;
 }
 
 .logo {
+/* position: absolute element positioned relative to closest positioned ancestor or initial containing block. Final position determined by left-right-top-bottom. */
   position: absolute;
   left: 20px;
 }
@@ -92,7 +96,9 @@ h4 {
 }
 
 .product-item button {
+/* display: block to start on new line with individual width */
   display: block;
+/* margin: auto to horizontally center button within container */
   margin: auto;
   background-color: #fc811c;
   font-size: 12pt;
